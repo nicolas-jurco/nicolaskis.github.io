@@ -136,3 +136,7 @@ h3 {
     flex-direction: row;
     width: 800px;
 }
+
+#slider-nav div{
+	padding-bottom: 2em;
+}
