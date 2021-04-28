@@ -1,0 +1,66 @@
+:root{
+	--mainColor: #eaeaea;
+	--secondarColor: #fff;
+	--borderColor: #c1c1c1;
+	--mainText: firebrick;
+	--secondarText: crimson;
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+.main-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* TODO create responsive main container*/
+
+h1, h2, h3, h4, h5, h6, strong{
+	color: var(--mainText);
+	font-family: 'Expletus Sans', cursive;
+}
+
+p, li, span, label, input, select, textarea{
+	color: var(--secondaryText);
+}
+
+.s1{
+	background-color: var(--mainColor);
+	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
+}
+
+.s2{
+	background-color: var(--secondaryColor);
+	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
+}
+
+.navigation{
+	grid-area: navigation;
+}
+.left-column{
+	grid-area: left-column;
+}
+.right-column{
+	background-color: aquamarine;
+	grid-area: right-column;
+}
+.bottom-slider{
+	background-color: blueviolet;
+	grid-area: bottom-slider;
+}
+
+#wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;	
+	grid-template-rows: 3em 30em ;
+	grid-template-areas: 
+		"navigation navigation"
+		"left-column right-column"
+		"bottom-slider bottom-slider";
+	gap: 10px;
+}
