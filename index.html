@@ -2,6 +2,7 @@
 <html lang="en">
 	<script src="sctipt.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="charts.css" />
 	<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
 	<link
 		href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap"
@@ -17,7 +18,18 @@
 		<div class="main-container-wrapper">
 			<section class="section-main">
 				<!--navigation-->
-				<div class="navigation"></div>
+				<div class="navigation">
+					<div class="logo">
+						<a href="#"
+							><font style="font-family: coalition; color: #f2125b">X</font></a
+						>
+					</div>
+					<div class="bars">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</div>
 				<!--navigation-end-->
 
 				<img class="modal" src="images/modal.png" />
@@ -29,38 +41,115 @@
 					</div>
 				</div>
 			</section>
-			<section class="timeline-container" id="timeline">
+			<section class="s-container" id="timeline">
 				<div class="timeline">
 					<ul>
+						<div class="bottom-left">
+							<h1>Timeline</h1>
+							<div class="line"></div>
+						</div>
+
 						<li>
 							<div>
-								<time>2019 : Boehringer Ingelheim</time> TODO
+								<time>2019 : Boehringer Ingelheim</time>Worked with tecnologies
+								like .NET, PostgreSQL, OpenShift, BitBucket, and other Atlassian
+								tools, to mantain a SCRUM Methorology workaround with the team.
 							</div>
 						</li>
 						<li>
 							<div>
-								<time>2018 : Softland</time> TODO
+								<time>2018 : Softland</time>Deep-dive into C++ and SQL Server.
+								Worked side by side with a senior C++ developer.
 							</div>
 						</li>
 						<li>
 							<div>
-								<time>2011 : Volkswagen</time> TODO
+								<time>2011 : Volkswagen Group Argentina S.A.</time>I experienced
+								working with suppliers, senior managers, collegues from all over
+								the world. Worked in Germany and Ecuador.
 							</div>
 						</li>
 						<li>
 							<div>
-								<time>Palermo University</time> TODO
+								<time
+									>Palermo University
+									<p>
+										5-year University Degree focusing on Computer Engineering
+									</p></time
+								>Where therory of things are explained in detailes, until you
+								understand... or understand.
 							</div>
 						</li>
 						<li>
 							<div>
-								<time>Pestalozzi</time> TODO
+								<time>Pestalozzi</time>Bilingual bachelor in science and letters
+								- German and English
 							</div>
 						</li>
 					</ul>
 				</div>
 			</section>
+			<section class="s-container" id="skills">
+				<div class="bottom-left">
+					<h1>Skills</h1>
+					<div class="line"></div>
+				</div>
+				<div class="wrap">
+					<div class="holder">
+						<div class="bar cf" data-percent="85%">
+							<span class="label">.NET (overall)</span>
+						</div>
+						<div class="bar cf" data-percent="75%">
+							<span class="label light">C++</span>
+						</div>
+						<div class="bar cf" data-percent="65%">
+							<span class="label">SQL Server</span>
+						</div>
+						<div class="bar cf" data-percent="90%">
+							<span class="label light">PostgreSQL</span>
+						</div>
+						<div class="bar cf" data-percent="90%">
+							<span class="label">JavaScript</span>
+						</div>
+						<div class="bar cf" data-percent="80%">
+							<span class="label light">CSS</span>
+						</div>
+						<div class="bar cf" data-percent="85%">
+							<span class="label light">HTML</span>
+						</div>
+						<div class="bar cf" data-percent="75%">
+							<span class="label">Agile Methodology</span>
+						</div>
+						<div class="bar cf" data-percent="75%">
+							<span class="label">Linux</span>
+						</div>
+						<div class="bar cf" data-percent="75%">
+							<span class="label">Windows</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="s-container" id="Miscellaneous Interesting Things">
+				<div class="bottom-left">
+					<h1>Miscellaneous Interesting Things</h1>
+					<div class="line"></div>
+				</div>
+			</section>
+			<section id="More About Me">
+				<div class="bottom-left">
+					<h1>More About me</h1>
+					<div class="line"></div>
+				</div>
+			</section>
+			<section id="Paper">
+				<div class="bottom-left">
+					<h1>Papers</h1>
+					<div class="line"></div>
+				</div>
+			</section>
 		</div>
 	</body>
 	<script src="timeline.js"></script>
+	<script src="nasa_request.js"></script>
+	<script src="chart.js"></script>
 </html>
