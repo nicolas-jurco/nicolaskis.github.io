@@ -187,17 +187,20 @@ h3 {
 .bottom-left {
 	position: relative;
 	bottom: 10px;
-	left: 50px;
+	left: 30px;
 	display: flex;
 	align-items: center;
+	max-width: 90%;
 }
 .bottom-left h1 {
 	color: #f2125b;
 	margin-right: 5px;
 	font-size: 70px;
+	line-height: 0px;
+	letter-spacing: 0px
 }
 .line {
-	width: 130px;
+	width: 100px;
 	height: 4px;
 	background-color: #ffffff;
 	border-radius: 10px;
@@ -220,7 +223,7 @@ h3 {
 .s-container,
 .s-container::before,
 .s-container::after {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	box-sizing: border-box;
 	display: block;
@@ -241,6 +244,7 @@ h3 {
 .s-container {
 	width: 100%;
 	margin: 0 auto;
+	margin-bottom: 30px;
 	text-align: center;
 	/* background-image: url(././images/timeline_bg.jpeg); */
 	background-repeat: no-repeat;
