@@ -402,6 +402,14 @@ time {
 	text-align: left;
 	width: 80%;
 	margin: auto;
+	opacity: 0;
+}
+
+#salute {
+	color: whitesmoke;
+	text-align: left;
+	width: 80%;
+	margin: auto;
 }
 
 /* GENERAL MEDIA QUERIES

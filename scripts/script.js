@@ -1,17 +1,38 @@
+function isElementInViewport(el) {
+	var rect = el.getBoundingClientRect();
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <=
+			(window.innerHeight || document.documentElement.clientHeight) &&
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	);
+}
+
 (function () {
 	("use strict");
 
-	// define variables
+	let index = 0;
+	let txt = "Hi... I am going to tell you some things about me...";
+	let speed = 50;
 
-	function isElementInViewport(el) {
-		var rect = el.getBoundingClientRect();
-		return (
-			rect.top >= 0 &&
-			rect.left >= 0 &&
-			rect.bottom <=
-				(window.innerHeight || document.documentElement.clientHeight) &&
-			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-		);
+	function typeWriter() {
+		let salute = document.getElementById("salute");
+		let aboutMe = document.getElementsByClassName("about-me")[0];
+
+		if (
+			isElementInViewport(salute) &&
+			!salute.classList.contains("completed")
+		) {
+			aboutMe.style.transition = "2s all";
+			if (index < txt.length) {
+				salute.innerHTML += txt.charAt(index);
+				index++;
+				setTimeout(typeWriter, speed);
+			} else {
+				aboutMe.style.opacity = 1;
+			}
+		}
 	}
 
 	function callbackFunc() {
@@ -67,6 +88,8 @@
 				hexagons[i].style.left = "0px";
 			}
 		}
+
+		typeWriter();
 	}
 
 	// listen for events
