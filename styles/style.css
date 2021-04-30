@@ -197,7 +197,7 @@ h3 {
 	margin-right: 5px;
 	font-size: 70px;
 	line-height: 0px;
-	letter-spacing: 0px
+	letter-spacing: 0px;
 }
 .line {
 	width: 100px;
@@ -396,6 +396,14 @@ time {
 	transition: all ease 0.5s;
 	box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.2);
 }
+
+.about-me {
+	color: whitesmoke;
+	text-align: left;
+	width: 80%;
+	margin: auto;
+}
+
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

@@ -50,6 +50,23 @@
 				// }
 			}
 		}
+		let hexagons = document.getElementsByClassName("miscellaneous_item");
+		let position = 0;
+		for (var i = 0; i < hexagons.length; i++) {
+			let rect = hexagons[i].getBoundingClientRect();
+			if (
+				rect.left < 0 &&
+				rect.bottom <=
+					(window.innerHeight || document.documentElement.clientHeight) &&
+				rect.right <=
+					(window.innerWidth || document.documentElement.clientWidth) &&
+				!hexagons[i].classList.contains("completed")
+			) {
+				hexagons[i].style.transition = "all 2s";
+				hexagons[i].style.left = "0px";
+				hexagons[i].style.left = "0px";
+			}
+		}
 	}
 
 	// listen for events
