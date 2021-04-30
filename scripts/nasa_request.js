@@ -1,4 +1,5 @@
-// Main call
+const timeline = document.querySelector(".timeline");
+
 function nasaRequest() {
 	let xmlhttp = new XMLHttpRequest();
 
@@ -21,7 +22,9 @@ function nasaRequest() {
 			let title = data["title"];
 			let url = data["url"];
 
-			timeline.style.backgroundImage = "url(" + url + ")";
+			// timeline.style.backgroundImage = "url(" + url + ")";
+			// timeline.style.setProperty("Background-Image", "url(" + url + ")");
+			// timeline.style.setProperty("Background-Image", "url(" + url + ")");
 
 			// HTML markup for images and videos
 			let imageType = `
@@ -64,6 +67,9 @@ function nasaRequest() {
 			}
 		}
 	};
+
+	console.log(timeline);
+
 	// Acessing a value from the date picker
 	let datepicker_date = date; // document.getElementById("wrapper-date").value;
 	// NASA API link
@@ -85,8 +91,5 @@ function nasaRequest() {
 // datePicker.addEventListener("dateChange.mdb.datepicker", (e) => {
 // 	nasaRequest();
 // });
-
-const timeline = document.querySelector(".timeline ul");
-console.log(timeline);
 // Initial call on page load
 nasaRequest().onload;
