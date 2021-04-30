@@ -412,6 +412,17 @@ time {
 	margin: auto;
 }
 
+#quote {
+	margin-top: 20px;
+	font-size: 30px;
+	text-align: right;
+	background: -webkit-linear-gradient(45deg, crimson, whitesmoke);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-right: 70px;
+	font-style: italic; 
+}
+
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

@@ -1,9 +1,9 @@
 #miscellaneous {
-	width: 1000px;
+	width: 100%;
 	overflow: hidden;
 	padding-bottom: 70px;
 	position: relative;
-	margin: 0 auto;
+	margin: 0;
 	margin-bottom: 2.5em;
 
 	-webkit-transition: all ease 500ms;
@@ -11,6 +11,8 @@
 	-o-transition: all ease 500ms;
 	-ms-transition: all ease 500ms;
 	transition: all ease 500ms;
+
+	text-align: left;
 }
 
 .beaker {
