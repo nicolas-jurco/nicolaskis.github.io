@@ -59,15 +59,15 @@ a {
 
 .modal {
 	position: absolute;
-	left: 65%;
-	top: 15%;
+	left: 80%;
+	top: -200px;
 	bottom: 0px;
 	transform: translateX(-55%);
 
-	max-height: 500px;
-	height: 100%;
-	width: auto;
-
+	max-height: 800px;
+	height: 300%;
+	width: 300%;
+	object-fit: contain;
 	z-index: 1;
 }
 h1,
