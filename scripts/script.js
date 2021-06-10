@@ -57,14 +57,14 @@ function isElementInViewport(el) {
 				bars[i].innerHTML += '<span class="count cf"></span>'; // .replace("%", "");
 				let countElement = bars[i].getElementsByClassName("count");
 				let countMax = parseInt(data_percent.replace("%", ""));
-				let j = 0;
+				let j = 1;
 				let timer = setInterval(function () {
 					if (countMax == j) {
 						clearInterval(timer);
-						j = 0;
+						j = 1;
 					} else {
 						countElement[0].innerHTML =
-							'<span class="count cf">' + j++ + "%</span>"; // .replace("%", "");
+							'<span class="count cf">' + ++j + "%</span>"; // .replace("%", "");
 					}
 				}, 20);
 				bars[i].classList.add("completed");
