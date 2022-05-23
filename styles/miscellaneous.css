@@ -133,7 +133,7 @@
 	margin: 0 auto;
 }
 
-.miscellaneous_item:nth-child(7n-2) {
+.miscellaneous_item:nth-child(7n-3) {
 	margin-left: 101px;
 }
 
